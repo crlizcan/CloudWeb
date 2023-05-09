@@ -1,4 +1,4 @@
-package BD.Gestion;
+package BD;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Vector;
 
-import BD.BD_Conector;
-import BD.BD_Exception;
 import Models.Usuario;
 
 public class BD_Usuario extends BD_Conector {
@@ -16,8 +14,8 @@ public class BD_Usuario extends BD_Conector {
     private static Statement stat;
     private static ResultSet res;
 
-    public BD_Usuario() {
-        super();
+    public BD_Usuario(String base) {
+        super(base);
     }
 
     /* Recibe un objeto de la clase Usuario y lo da de alta.

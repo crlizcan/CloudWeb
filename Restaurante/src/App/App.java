@@ -3,7 +3,7 @@ package App;
 import java.util.Locale;
 import java.util.Scanner;
 
-import BD.Gestion.BD_Usuario;
+import BD.BD_Usuario;
 import Models.Usuario;
 
 public class App {
@@ -13,6 +13,7 @@ public class App {
         /* Menu */
         int opcion;
         /* Datos de un Usuario */
+        BD_Usuario BD_Usuario = new BD_Usuario("Restaurante");
         Usuario usuario;
         String user, pass, nombre, apell, direcc, telef;
         int tipoUser;

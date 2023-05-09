@@ -10,7 +10,8 @@ public class BD_Conector {
     protected Connection conexion;
 
     /* Constructor con la informacion necesaria para conectar a la BBDD */
-    public BD_Conector() {
+    public BD_Conector(String base) {
+    	this.base = base;
         this.usuario = "root";
         this.contraseña = "a1234567";
         this.url = "jdbc:mysql://localhost/" + base;
